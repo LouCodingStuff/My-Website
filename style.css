@@ -1,0 +1,80 @@
+body {
+  background-image: url('background.JPG');
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 50px;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 20px;
+}
+
+.title-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 20px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+.box:nth-of-type(1) {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.box:nth-of-type(2) {
+  animation: slideInRight 1s ease-in-out;
+}
+
+.box h2 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.box p {
+  color: white;
+  font-size: 14px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
