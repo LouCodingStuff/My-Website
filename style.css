@@ -48,7 +48,7 @@ p {
 
 .box {
     width: 300px;
-    height: 200px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.3);
     margin: 20px;
     padding: 20px;
@@ -59,23 +59,17 @@ p {
 .moreinfo-box-container {
     justify-content: center; /* center the container horizontally */
     align-items: center; /* center the container vertically */
-    overflow: auto; /* add this so the text inside the box can be scrollable */
     display: flex; /* Add this to enable flex properties */
-    justify-content: center; /* center the container horizontally */
-    align-items: center; /* center the container vertically */
     margin: 0 auto; /* center the container horizontally and give equal margins on the top and bottom */
-    display: flex; /* set the container to use the flexbox layout */
 }
-
 
 .moreinfo-box-container .box {
     width: 1000px; /* or the same width as the container */
     padding: 20px;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
+    height: auto;
 }
-
-
 
 .box h2 {
     color: white;
@@ -91,6 +85,7 @@ p {
 .move-boxes{
     /* add animation to move the boxes*/
 }
+
 nav {
     background-color: black; /* Change the background color to black */
     position: fixed; /* Fix the navbar to the top of the screen */
