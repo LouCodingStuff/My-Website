@@ -57,12 +57,17 @@ p {
 }
 
 .third-box-container {
-    display: flex;
     justify-content: center; /* center the container horizontally */
     align-items: center; /* center the container vertically */
     width: 500px; /* or any other width you desire */
     overflow: auto; /* add this so the text inside the box can be scrollable */
+    display: flex; /* Add this to enable flex properties */
+    justify-content: center; /* center the container horizontally */
+    align-items: center; /* center the container vertically */
+    margin: 0 auto; /* center the container horizontally and give equal margins on the top and bottom */
+    display: flex; /* set the container to use the flexbox layout */
 }
+
 
 .third-box-container .box {
     width: 500px; /* or the same width as the container */
