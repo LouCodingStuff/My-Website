@@ -56,10 +56,9 @@ p {
     text-align: center;
 }
 
-.third-box-container {
+.moreinfo-box-container {
     justify-content: center; /* center the container horizontally */
     align-items: center; /* center the container vertically */
-    width: 500px; /* or any other width you desire */
     overflow: auto; /* add this so the text inside the box can be scrollable */
     display: flex; /* Add this to enable flex properties */
     justify-content: center; /* center the container horizontally */
@@ -69,8 +68,8 @@ p {
 }
 
 
-.third-box-container .box {
-    width: 500px; /* or the same width as the container */
+.moreinfo-box-container .box {
+    width: 1000px; /* or the same width as the container */
     padding: 20px;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
@@ -111,7 +110,4 @@ nav .nav-button {
     color: white; /* Change the text color to white */
     text-decoration: none; /* Remove the underline from the links */
     margin: 0 10px; /* Add some margin to the buttons */
-}
-.third-box-container .box {
-    margin: 0 auto; /* Add equal margins to the top and bottom and left and right of the box */
 }
