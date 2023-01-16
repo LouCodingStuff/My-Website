@@ -1,7 +1,9 @@
 body {
-  background-image: url('background1.jpg');
-  background-size: cover;
-  font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-image: url('background1.jpg');
 }
 
 h1 {
@@ -19,10 +21,15 @@ p {
     margin-top: 20px;
 }
 
-.title-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.main-content {
+    background-position: 100px; /* -50px will center the image slightly higher than the center */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    padding: 10px;
 }
+
 
 .box-container {
     display: flex;
@@ -31,7 +38,7 @@ p {
 }
 
 .box {
-    width: 300px;
+    width: 400px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.3);
     margin: 20px;
@@ -41,18 +48,18 @@ p {
 }
 
 .moreinfo-box-container {
-    justify-content: center; /* center the container horizontally */
-    align-items: center; /* center the container vertically */
-    display: flex; /* Add this to enable flex properties */
-    margin: 0 auto; /* center the container horizontally and give equal margins on the top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .moreinfo-box-container .box {
-    width: 1000px; /* or the same width as the container */
+    width: 1000px;
+    height: auto;
     padding: 20px;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
-    height: auto;
 }
 
 .box h2 {
@@ -66,31 +73,23 @@ p {
     text-shadow: 2px 2px 4px #000000;
 }
 
-.move-boxes{
-    /* add animation to move the boxes*/
-}
-
 nav {
-    background-color: black; /* Change the background color to black */
-    position: fixed; /* Fix the navbar to the top of the screen */
-    top: 0; /* Distance from the top of the screen */
-    left: 0; /* Distance from the left of the screen */
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 10px;
 }
 
 nav .nav-container {
     display: flex;
-    justify-content: flex-start; /* Align the nav buttons to the left of the container */
+    justify-content: flex-start;
 }
 
 nav .nav-button {
-    font-size: 21px; /* Increase the font size to 18px */
-    color: white; /* Change the text color to white */
-    text-decoration: none; /* Remove the underline from the links */
-    margin: 0 10px; /* Add some margin to the buttons */
-}
-
-.title-container {
-    padding: 10px
+    font-size: 21px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
