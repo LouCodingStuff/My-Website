@@ -90,3 +90,7 @@ nav .nav-button {
     text-decoration: none; /* Remove the underline from the links */
     margin: 0 10px; /* Add some margin to the buttons */
 }
+
+.title-container {
+    padding: 10px
+}
